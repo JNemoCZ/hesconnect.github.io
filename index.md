@@ -1,10 +1,6 @@
 ---
-layout: default
----
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
 
@@ -33,6 +29,7 @@ var fun = function lang(l) {
   return true;
 }
 ```
+[Link to another page](./another-page.html).
 
 ```ruby
 # Ruby code with syntax highlighting
