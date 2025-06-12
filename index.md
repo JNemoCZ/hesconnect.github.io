@@ -10,11 +10,15 @@ There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-# Header 1
+# Human Extending System
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+Human Extending System slouží ke sběru, správě a vyhodnocení dat z nositelné elektroniky. Je určena pro výzkumné účely a sbírá základní data z nositelné elektroniky. Aplikace umožňuje uživatelskou autentizaci, správu dat a odesílání notifikací (ve vývoji).
 
-## Header 2
+## Cílová skupina
+
+V jednotlivých verzích je určena pro primárně jinou cílovou skupinu, to je v souladu s prostředím, kde je provozována.
+1. Pro výzkumné účely (ext) - primárně určena výzkumníkům - nasazení na Heroku v kombinaci s daty uloženými na vlastním serveru
+2. Pro tělocvikáře a výzkumné účely - provoz ve vnitřním systému UO - primárně pro hodnocení a sběr dat od studentů a výzkumů prováděných na Univerzitě Obrany
 
 > This is a blockquote following a header.
 >
