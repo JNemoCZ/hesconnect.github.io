@@ -1,34 +1,26 @@
----
-
-
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
 # Human Extending System
 
-Human Extending System slouží ke sběru, správě a vyhodnocení dat z nositelné elektroniky. Je určena pro výzkumné účely a sbírá základní data z nositelné elektroniky. Aplikace umožňuje uživatelskou autentizaci, správu dat a odesílání notifikací (ve vývoji).
+Systém slouží ke sběru, správě a vyhodnocení dat z nositelné elektroniky. Je určena pro výzkumné účely a sbírá základní data z nositelné elektroniky. Aplikace umožňuje uživatelskou autentizaci, správu dat a odesílání notifikací (ve vývoji).
+---
 
 ## Cílová skupina
 
-V jednotlivých verzích je určena pro primárně jinou cílovou skupinu, to je v souladu s prostředím, kde je provozována.
-1. Pro výzkumné účely (ext) - primárně určena výzkumníkům - nasazení na Heroku v kombinaci s daty uloženými na vlastním serveru
+V jednotlivých verzích je určena pro primárně jinou cílovou skupinu a toto použití je v souladu s prostředím, kde je provozována.
+1. Pro výzkumné účely (externí) - primárně určena výzkumníkům - nasazení na Heroku v kombinaci s daty uloženými na vlastním serveru
 2. Pro tělocvikáře a výzkumné účely - provoz ve vnitřním systému UO - primárně pro hodnocení a sběr dat od studentů a výzkumů prováděných na Univerzitě Obrany
+3. Pro potřeby AČR a statistické zpracování dat - provoz ve vnitřních systémech rezortu MO.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+> Veškeré použití lze upravovat na základě požadavků. Možnosti využití v oblasti telemedicíny, rehabilitace, preventivní medicíně.
 
-### Header 3
+### Role a názvosloví
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+- **Zařízení (jedinec):** nositelná elektronika (např. Garmin) přiřazená konkrétnímu jedinci (ten nemusí mít do samotné aplikace přístup, slouží jen ke sběru dat)
+    
+- **Uživatel (supervizor):** odborný uživatel s přístupem k vybraným skupinám jedinců (má práva nahlížet na svou skupinu, editovat v rámci jedinců ve skupině. Nemůže přidávat nové jedince.)
+    
+- **Administrátor (superuser):** má přístup ke správě skupin, zařízení i přiřazení jedinců k uživatelům.
+
+  
 [Link to another page](./another-page.html).
 
 ```ruby
@@ -38,11 +30,17 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-#### Header 4
+#### **🔧 Technologie**
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+| **Komponenta**  | **Použité technologie**       |
+| --------------- | ----------------------------- |
+| Backend         | Django 5.1.7, Python 3.11     |
+| Databáze        | MySQL, PostgreSQL             |
+| Frontend        | Django templates, Bootstrap 5 |
+| Nasazení        | Heroku                        |
+| E-maily         | Resend / SMTP                 |
+| Autentizace     | Django (s registrací)         |
+| API (volitelně) | Django REST Framework         |
 
 ##### Header 5
 
